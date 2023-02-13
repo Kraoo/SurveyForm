@@ -4,19 +4,21 @@
     <head>
         <title>BoardGameSurvey</title>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
         <h1 id="title">Board Game Survey</h1>
         <p id="description">What is your favorite boardgame???</p>
         <form id="survey-form">
-        <div class="text-input">
+    <fieldset>
+        <div class="personal-info-input">
             <label id="name-label">Name:<input type="text" id="name" placeholder="Enter your name" required></label>            
             <label id="email-label">Email:<input type="email" id="email" placeholder="Enter your email" required></label>        
             <label id="number-label">Age:<input type="number" id="number" min="1" max="3" placeholder="Enter your age" required></label>
         </div>        
         <div class="dropdown-input">
-            <label for="current-role">
+            <label id="current-role"> How often do you play board games?
                 <select id="dropdown">
                     <option value="" selected hidden disabled>Select your current role</option>
                     <option value="full-time">I play all the time!</option>
@@ -28,6 +30,30 @@
                 </select>
             </label>        
         </div>
+        <div class="radio-input">
+            <p>Would you say board games are the best entertainment?</p>
+            <label><input type="radio" value="yes" name="recommendation">Absolutely</label>
+            <label><input type="radio" value="maybe" name="recommendation">Maybe they are</label>
+            <label><input type="radio" value="not-sure" name="recommendation">I'm not sure</label>
+        </div>
+        <div class="board-game-selection">
+            <label id="board-games">
+                <input type="checkbox" value="chess"> Chess    
+                <input type="checkbox" value="checkers"> Checkers
+                <input type="checkbox" value="monopoly"> Monopoly
+                <input type="checkbox" value="battleship"> Battleship
+                <input type="checkbox" value="sorry"> Sorry!
+                <input type="checkbox" value="candy land"> Candy Land
+            </label>
+        </div>
+        <div class="tell-us-more">
+            <p>Please tell us why that is your favorite!!</p>
+            <label>
+                <textarea placeholder="Tell us here!!" rows="8" cols="60"></textarea>
+            </label>
+        </div>
+    </fieldset>
+            <input type="submit" value="Submit" id="submit">
         </form>
     </body>
 </html>
