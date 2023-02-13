@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>BoardGameSurvey</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1 id="title">Board Game Survey</h1>
+        <p id="description">What is your favorite boardgame???</p>
+        <form id="survey-form">
+        <div class="text-input">
+            <label id="name-label">Name:<input type="text" id="name" placeholder="Enter your name" required></label>            
+            <label id="email-label">Email:<input type="email" id="email" placeholder="Enter your email" required></label>        
+            <label id="number-label">Age:<input type="number" id="number" min="1" max="3" placeholder="Enter your age" required></label>
+        </div>        
+        <div class="dropdown-input">
+            <label for="current-role">
+                <select id="dropdown">
+                    <option value="" selected hidden disabled>Select your current role</option>
+                    <option value="full-time">I play all the time!</option>
+                    <option value="part-time">I play most of the time!</option>
+                    <option value="often">I play every now and again!</option>
+                    <option value="never">I don't play because I'm not loved!</option>
+                    <option value="no-answer">I'm scared to answer!</option>
+                    <option value="other">Other (⩺_⩹)</option>
+                </select>
+            </label>        
+        </div>
+        </form>
+    </body>
+</html>
