@@ -66,7 +66,7 @@ fieldset {
 #current-role {
     color: #953553;
     display: grid;
-    grid-template-columns: 20%%;
+    grid-template-columns: 20%;
     justify-content: center;
     padding: 12px;
 }
