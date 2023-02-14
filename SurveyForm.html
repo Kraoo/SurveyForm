@@ -17,6 +17,9 @@
             <label id="email-label">Email:<input type="email" id="email" placeholder="Enter your email" required></label>        
             <label id="number-label">Age:<input type="number" id="number" min="1" max="3" placeholder="Enter your age" required></label>
         </div>        
+
+        <!-- <hr> -->
+
         <div class="dropdown-input">
             <label id="current-role"> How often do you play board games?
                 <select id="dropdown">
@@ -31,13 +34,17 @@
             </label>        
         </div>
         <div class="radio-input">
-            <p>Would you say board games are the best entertainment?</p>
+            <p id="radio-question">Would you say board games are the best entertainment?</p>
+
+            <div class="radio-options">
             <label><input type="radio" value="yes" name="recommendation">Absolutely</label>
             <label><input type="radio" value="maybe" name="recommendation">Maybe they are</label>
             <label><input type="radio" value="not-sure" name="recommendation">I'm not sure</label>
+            </div>    
+
         </div>
         <div class="board-game-selection">
-            <label id="board-games">
+            <label id="board-games"> What are your favorite board games??
                 <input type="checkbox" value="chess"> Chess    
                 <input type="checkbox" value="checkers"> Checkers
                 <input type="checkbox" value="monopoly"> Monopoly
