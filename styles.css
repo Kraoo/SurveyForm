@@ -29,3 +29,29 @@ fieldset {
     font-size: 25px;
     text-align: center;
 }
+
+.personal-info-input {
+    text-align: center;
+    color: #953553;
+}
+
+#name-label {
+    display: grid;
+    grid-template-columns: 15%;
+    justify-content: center;
+    padding: 5px;
+}
+
+#email-label {
+    display: grid;
+    grid-template-columns: 15%;
+    justify-content: center;
+    padding: 5px;
+}
+
+#number-label {
+    display: grid;
+    grid-template-columns: 8%;
+    justify-content: center;
+    padding: 5px;
+}
