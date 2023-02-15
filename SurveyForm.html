@@ -18,10 +18,11 @@
             <label id="number-label">Age:<input type="number" id="number" min="1" max="3" placeholder="Enter your age" required></label>
         </div>        
 
+        <div class="border-1"></div>
         <!-- <hr> -->
 
         <div class="dropdown-input">
-            <label id="current-role"> How often do you play board games?
+            <label id="current-role"> <p id="dropdown-para">How often do you play board games?</p>
                 <select id="dropdown">
                     <option value="" selected hidden disabled>Select your current role</option>
                     <option value="full-time">I play all the time!</option>
@@ -43,8 +44,12 @@
             </div>    
 
         </div>
+
+        <div class="border-2"></div>
+
         <div class="board-game-selection">
-            <label id="board-games"> What are your favorite board games??
+            <p id="board-games-para">What are your favorite board games??</p>
+            <label id="board-games"> 
                 <input type="checkbox" value="chess"> Chess    
                 <input type="checkbox" value="checkers"> Checkers
                 <input type="checkbox" value="monopoly"> Monopoly
@@ -53,10 +58,13 @@
                 <input type="checkbox" value="candy land"> Candy Land
             </label>
         </div>
+
+        <div class="border-3"></div>
+
         <div class="tell-us-more">
-            <p>Please tell us why that is your favorite!!</p>
+            <p class="text-area-question">Please tell us why that is your favorite!!</p>
             <label>
-                <textarea placeholder="Tell us here!!" rows="8" cols="60"></textarea>
+                <textarea placeholder="Tell us here!!" rows="8" cols="60" class="text-box"></textarea>
             </label>
         </div>
     </fieldset>

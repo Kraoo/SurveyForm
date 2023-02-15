@@ -4,16 +4,43 @@
 }
 
 body {
-    /* background-image: url("assets/chessbackground.jpg"); */
+    background-image: url("assets/chessbackground.jpg"); 
     background-repeat: no-repeat;
     width: 100vw;
     height: 100vh;
     background-position: center;
     background-size: cover;
-}
+} 
 
 fieldset {
     border: none;
+}
+
+.border-1 {
+    background-image: url(assets/chessborder.png);
+    background-repeat: no-repeat;
+    height: 57px;
+    width: 220px;
+    background-size: 100%;
+    margin: 0 auto;
+}
+
+.border-2 {
+    background-image: url(assets/pngwing.com.png);
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 300px;
+    background-size: 100%;
+    margin: 0 auto;
+}
+
+.border-3 {
+    background-image: url(assets/battleshipborder.png);
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 130px;
+    background-size: 100%;
+    margin: 0 auto;
 }
 
 /* hr {
@@ -60,13 +87,17 @@ fieldset {
     display: grid;
     grid-template-columns: 8%;
     justify-content: center;
-    padding: 5px;
+    padding: 15px;
+}
+
+#dropdown-para {
+    margin: 0 auto;
+    padding: 8px;
 }
 
 #current-role {
-    color: #953553;
     display: grid;
-    grid-template-columns: 20%%;
+    grid-template-columns: 20%;
     justify-content: center;
     padding: 12px;
 }
@@ -75,14 +106,47 @@ fieldset {
     display: grid;
     grid-template-columns: 30%;
     justify-content: center;
-    padding: 5px;
-    margin-left: 3%;
+    margin-left: 9%;
 }
 
 .radio-options {
     display: grid;
     grid-template-columns: 30%;
     justify-content: center;
-    padding: 5px;
-    margin-left: 15%;
+    margin-left: 18%;
+}
+
+#board-games-para {
+    display: grid;
+    grid-template-columns: 30%;
+    justify-content: center;
+    margin-left: 13%;
+}
+
+#board-games {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    padding: 10px;
+}
+
+.text-area-question {
+    display: grid;
+    grid-template-columns: 20%;
+    justify-content: center;
+    margin-left: 6%;
+}
+
+.text-box {
+    display: grid;
+    grid-template-columns: 50%;
+    margin: 0 auto;
+}
+
+input[type="submit"] {
+    display: block;
+    border-radius: 10rem;
+    margin: 0 auto;
+    font-size: 14px;
+    padding: 8px;
 }
