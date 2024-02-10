@@ -4,85 +4,140 @@
 }
 
 body {
-    /* background-image: url("assets/chessbackground.jpg"); */
-    background-repeat: no-repeat;
-    width: 100vw;
+    font-family: 'myFont', Arial, sans-serif;
+    background-color: #fff;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
-    background-position: center;
-    background-size: cover;
+}
+
+.container {
+    max-width: 600px;
+    padding: 20px;
+    background-color: #f0f5f9;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #12232e;
+    font-size: 36px;
+    margin-top: 50px;
+}
+
+#description {
+    color: #12232e;
+    font-size: 18px;
+    margin-bottom: 20px;
 }
 
 fieldset {
     border: none;
+    margin-bottom: 20px;
 }
 
-/* hr {
-    display: block;
-    border: none;
-    height: max-content;
-    background-image: url(https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/60481/chess-pieces-clipart-md.png);
-} */
-
-#title {
-    color: #953553;
-    font-size: 60px;
-    text-align: center;
-    font-family: myFont;
-    margin: 0;
+.label-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin-bottom: 20px;
 }
 
-#description {
-    color: #953553;
-    font-size: 25px;
-    text-align: center;
+label {
+    color: #12232e;
+    font-size: 16px;
+    margin-bottom: 5px;
 }
 
-.personal-info-input {
-    text-align: center;
-    color: #953553;
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+    max-width: 150px;
+    margin-bottom: 10px;
+    background-color: #d1e9f2;
+    color: #12232e;
 }
 
-#name-label {
-    display: grid;
-    grid-template-columns: 15%;
-    justify-content: center;
-    padding: 5px;
-}
-
-#email-label {
-    display: grid;
-    grid-template-columns: 15%;
-    justify-content: center;
-    padding: 5px;
-}
-
-#number-label {
-    display: grid;
-    grid-template-columns: 8%;
-    justify-content: center;
-    padding: 5px;
-}
-
-#current-role {
-    color: #953553;
-    display: grid;
-    grid-template-columns: 20%;
-    justify-content: center;
-    padding: 12px;
-}
-
-#radio-question {
-    display: grid;
-    grid-template-columns: 30%;
-    justify-content: center;
-    padding: 5px;
-    margin-left: 3%;
+select {
+    width: 100%;
+    max-width: 320px;
 }
 
 .radio-options {
-    display: grid;
-    grid-template-columns: 30%;
+    display: flex;
     justify-content: center;
-    padding: 5px;
-    margin-left: 15%;
+    margin-bottom: 20px;
+}
+
+.radio-options label {
+    margin-right: 20px;
+    font-size: 16px;
+}
+
+.board-game-selection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.board-game-selection input[type="checkbox"] {
+    margin: 0 5px;
+}
+
+.tell-us-more {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 100%;
+    max-width: 600px;
+    min-height: 100px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #d1e9f2;
+    color: #12232e;
+}
+
+#radio-question {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.submit-container {
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+#submit {
+    padding: 10px 20px;
+    background-color: #12232e;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+#submit:hover {
+    background-color: #0b1624;
 }
